@@ -131,3 +131,43 @@ while (m<=10) {
 console.log(`While loop value is ${m}`)
 m++;
 }
+
+//looping through arrays
+//method 1
+for (let b=0; b<todos.length; b++) {
+    console.log(todos[b].text);
+}
+
+//method 2
+for  (let todo of todos) {
+    console.log(todo.id)
+}
+
+//method 3 - High order array methods:
+//a) forEach
+
+todos.forEach(function(todo) {
+console.log(todo.text)
+})
+
+//b) map - returns an array
+const todoText = todos.map(function(todo) {
+    return todo.text;
+})
+console.log(todoText);
+
+//c) filter 
+const todoCompleted = todos.filter(function(todo) {
+    return todo.isComplete === true;
+})
+
+console.log(todoCompleted);
+
+//c) more (functional programming)
+const todoIsCompleted = todos.filter(function(todo) {
+    return todo.isComplete === true;
+}).map(function(todo) {
+    return todo.text;
+})
+
+console.log(todoIsCompleted)
