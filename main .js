@@ -73,6 +73,45 @@ console.log(Array.isArray(cars));
 console.log(cars.indexOf('BMW'));
 
 
+const person = {
+    firstname: 'Lorem',
+    lastname: 'Ipsum',
+    age: 22,
+    hobbies: ['coding', 'designing', 'hiking'],
+    address: {
+        county: 'Nyeri',
+        state: 'Kenya'
+    }
+}
 
+console.log(person.hobbies[1]);
 
+//we can also use destructuring then create variables
+const { firstname, lastname, address: {state}} = person;
+console.log(state);
+//You can also add properties
+person.email = 'loremipsum@gmail.com';
 
+console.log(person)
+
+//object literals
+//objects in an array
+const todos = [
+    {
+        id: 1,
+        text: 'Learn JavaScript',
+        isComplete: true
+    },
+    {
+        id: 2,
+        text: 'Post on LinkedIn',
+        isComplete: true
+    },
+    {
+        id: 3,
+        text: 'Design Dr. alin`s logo',
+        isComplete: false
+    } 
+]
+
+console.log(todos[1].text)
