@@ -120,7 +120,14 @@ console.log(todos[1].text)
 const todoJSON = JSON.stringify(todos);
 console.log(todoJSON);
 
-//for loops
-for (let k = 0; k <= 10; k++) {
+//for loop
+for (let k=0; k<=10; k++) {
 console.log(`The value of k is ${k}`);
+}
+
+//while loop
+let m = 0;
+while (m<=10) {
+console.log(`While loop value is ${m}`)
+m++;
 }
