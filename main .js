@@ -115,3 +115,8 @@ const todos = [
 ]
 
 console.log(todos[1].text)
+
+//converting the object literals into json say for example so as to send in a database
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
+
