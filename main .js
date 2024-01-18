@@ -1,7 +1,7 @@
 
 // assigning variables:
 // var - oldskool
-//let - used when you will reasdign the value later in the code e.g. score for a game
+//let - used when you will reassign the value later in the code e.g. score for a game
 //const - as the name alludes, it's a constant
 let d;
 d = 24;
@@ -171,3 +171,15 @@ const todoIsCompleted = todos.filter(function(todo) {
 })
 
 console.log(todoIsCompleted)
+
+//if statements
+// double equals doesn't match the data type as compared to the tripple equals which does
+const a = 9;
+
+if ( a === 10 ) {
+    console.log('a is 10')
+} else if(a > 10) {
+    console.log('a is greater than 10');
+}else {
+    console.log('a is less than 10')
+}
