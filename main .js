@@ -183,3 +183,24 @@ if ( a === 10 ) {
 }else {
     console.log('a is less than 10')
 }
+
+// instead of using nested if statements, you can use or - reperesented by || or and - represeted by &&
+const t = 5;
+const u = 10;
+
+if (t>4 && u <20) {
+console.log('t is greater than 6 or u is less than 20')
+}
+
+//ternary operator
+const r = 28;
+
+const car = r>20 ? 'BMW' : 'Audi' // ? represents 'then' , : represents 'else' 
+
+console.log(car);
+
+//switch
+ const q = 13;
+
+const gari = q 
+
