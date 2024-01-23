@@ -243,3 +243,6 @@ function addNums(num1, num2) {
    num3 + num4;
  
  console.log(addingNumber(6,3));
+
+ //Object Oriented Programming
+ 
