@@ -200,7 +200,46 @@ const car = r>20 ? 'BMW' : 'Audi' // ? represents 'then' , : represents 'else'
 console.log(car);
 
 //switch
- const q = 13;
+ const q = 10;
 
-const gari = q 
+const gari = 'rToyota'
 
+switch(gari) {
+    case 'BMW' :
+        console.log('You deserve a BMW');
+        break;
+    case 'Toyota':
+        console.log('You deserve a toyota');
+        break;
+    default:
+        console.log('You do not deserve a car');
+    break;
+}
+
+
+//functions
+//Old Schoool methid of creating and calling a function
+function addNums(num1, num2) {
+console.log (num1 + num2);
+}
+addNums(9, 5);
+
+//method 2
+function addNums(num1, num2) {
+    return (num1 + num2);
+    }
+    
+    console.log(addNums(5,0));
+
+//using the arrow function instead of the above
+ const addingNumbers = (num3=1, num4=1) => { //incase you had one parameter, you can omit the brackets
+    return num3 + num4;
+ }
+
+ console.log(addingNumbers(6,3));
+
+ //incase there is only one thing happening in the function, you can omit hthe curly braces and the 'return' keyword e.g
+ const addingNumber = (num3=1, num4=1) =>  //incase you had one parameter, you can omit the brackets
+   num3 + num4;
+ 
+ console.log(addingNumber(6,3));
