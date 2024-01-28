@@ -232,7 +232,7 @@ function addNums(num1, num2) {
     console.log(addNums(5,0));
 
 //using the arrow function instead of the above
- const addingNumbers = (num3=1, num4=1) => { //incase you had one parameter, you can omit the brackets
+ const addingNumbers = (num3=1, num4=1) => { //incase you had one parameter, you can omit the curved brackets
     return num3 + num4;
  }
 
