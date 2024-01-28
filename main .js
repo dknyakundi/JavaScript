@@ -247,21 +247,40 @@ function addNums(num1, num2) {
  //Object Oriented Programming
 // Constructor Function
 
+// function Person (firstname, lastname, dob) {
+//  this.firstname = firstname;
+//  this.lastname = lastname;
+//  this.dob = new Date(dob);
+//  this.getFullName = function () {
+//     return `${this.firstname} ${this.lastname}`;
+//  }
+//  this.getbirthyear = function () {
+//     return `${this.dob.getFullYear()}`;
+//  }
+// }
+
+//prototypes are a better way to do the above
 function Person (firstname, lastname, dob) {
- this.firstname = firstname;
- this.lastname = lastname;
- this.dob = new Date(dob);
- this.getFullName = function () {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.dob = new Date(dob);
+   }
+
+   Person.prototype.getFullName = function () {
     return `${this.firstname} ${this.lastname}`;
- }
- this.getbirthyear = function () {
+   }
+
+   Person.prototype.getbirthyear = function () {
     return `${this.dob.getFullYear()}`;
- }
-}
+   }
+
 
 //instantiate the object
  const person1 = new Person('Daniel', 'Nyakundi', '2-23-2002');  // the date starts with month then day
 
  console.log(person1.getFullName());
- console.log(person1.getbirthyear());
+ console.log(person1);
+
+
+
 
