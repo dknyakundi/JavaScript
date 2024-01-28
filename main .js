@@ -260,26 +260,44 @@ function addNums(num1, num2) {
 // }
 
 //prototypes are a better way to do the above
-function Person (firstname, lastname, dob) {
-    this.firstname = firstname;
-    this.lastname = lastname;
-    this.dob = new Date(dob);
-   }
+// function Person (firstname, lastname, dob) {
+//     this.firstname = firstname;
+//     this.lastname = lastname;
+//     this.dob = new Date(dob);
+//    }
 
-   Person.prototype.getFullName = function () {
-    return `${this.firstname} ${this.lastname}`;
-   }
+//    Person.prototype.getFullName = function () {
+//     return `${this.firstname} ${this.lastname}`;
+//    }
 
-   Person.prototype.getbirthyear = function () {
-    return `${this.dob.getFullYear()}`;
-   }
+//    Person.prototype.getbirthyear = function () {
+//     return `${this.dob.getFullYear()}`;
+//    }
+
+//classes make the above have some syntactical sugar
+ class Person {
+    constructor (firstname, lastname, dob) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.dob = new Date(dob);  
+    }
+    getFullName() {
+        return `${this.firstname} ${this.lastname}`;
+    }
+    getbirthyear() {
+        return `${this.dob.getFullYear()}`;  
+    }
+ }
 
 
 //instantiate the object
  const person1 = new Person('Daniel', 'Nyakundi', '2-23-2002');  // the date starts with month then day
+ const person2 = new Person('Mary', 'Smith', '12-23-2002');
 
- console.log(person1.getFullName());
+ console.log(person2.getFullName());
  console.log(person1);
+
+ 
 
 
 
