@@ -251,9 +251,17 @@ function Person (firstname, lastname, dob) {
  this.firstname = firstname;
  this.lastname = lastname;
  this.dob = new Date(dob);
+ this.getFullName = function () {
+    return `${this.firstname} ${this.lastname}`;
+ }
+ this.getbirthyear = function () {
+    return `${this.dob.getFullYear()}`;
+ }
 }
 
 //instantiate the object
  const person1 = new Person('Daniel', 'Nyakundi', '2-23-2002');  // the date starts with month then day
 
- console.log(person1.dob.getFullYear());
+ console.log(person1.getFullName());
+ console.log(person1.getbirthyear());
+
