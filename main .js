@@ -202,7 +202,7 @@ console.log(car);
 //switch
  const q = 10;
 
-const gari = 'rToyota'
+const gari = 'Toyota'
 
 switch(gari) {
     case 'BMW' :
@@ -245,4 +245,15 @@ function addNums(num1, num2) {
  console.log(addingNumber(6,3));
 
  //Object Oriented Programming
- 
+// Constructor Function
+
+function Person (firstname, lastname, dob) {
+ this.firstname = firstname;
+ this.lastname = lastname;
+ this.dob = new Date(dob);
+}
+
+//instantiate the object
+ const person1 = new Person('Daniel', 'Nyakundi', '2-23-2002');  // the date starts with month then day
+
+ console.log(person1.dob.getFullYear());
