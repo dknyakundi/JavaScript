@@ -325,6 +325,14 @@ ul.children[1].innerText = 'DK';
 
 ul.lastElementChild.innerHTML = '<h1>Hey</h1>';
 
+//changing style
+const btn =document.querySelector('.btn');
+btn.style.background = 'blue';
 
-
-
+//events
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('#my-form').style.background = '#ccc';
+    document.querySelector('body').classList.add('bg-dark');
+    document.querySelector('.items').lastElementChild.innerHTML = '<h2>Wozza</h2>';
+})
