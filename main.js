@@ -297,7 +297,33 @@ function addNums(num1, num2) {
  console.log(person2.getFullName());
  console.log(person1);
 
- 
+ //DOM - Document Object Model
+ //Selectors
+ //a) Single element selectors
+//  console.log(document.getElementById('my-form'));
+const singleSelector = document.getElementById('my-form');
+console.log(singleSelector);
+
+console.log(document.querySelector('h1'));
+
+//b) Multiple selectors
+// console.log(document.querySelectorAll('item')); //returns some sort of array where we can use array methods too
+// console.log(document.getElementsByClassName('item')); //returns an HTML collection hence can't use array methods on
+// console.log(document.getElementsByTagName('list'));
+
+//looping through the DOM
+const items = document.querySelectorAll('.item');
+items.forEach((item) => console.log(item));
+
+//manipulating the DOM (basically means the UI)
+const ul = document.querySelector('.items');
+
+// ul.remove();
+// ul.lastElementChild.remove();
+ul.firstElementChild.textContent = 'WaDaniel';
+ul.children[1].innerText = 'DK';
+
+ul.lastElementChild.innerHTML = '<h1>Hey</h1>';
 
 
 
